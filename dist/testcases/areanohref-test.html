@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;area&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;area&gt;</h1>
+    <p>Last updated: 11 February 2020 09:18:00</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='button' class='role-test button-test areanohref-test' id='areanohref-button-0-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='checkbox' class='role-test checkbox-test areanohref-test' id='areanohref-checkbox-1-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='gridcell' class='role-test gridcell-test areanohref-test' id='areanohref-gridcell-2-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='link' class='role-test link-test areanohref-test' id='areanohref-link-3-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='menuitem' class='role-test menuitem-test areanohref-test' id='areanohref-menuitem-4-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='menuitemcheckbox' class='role-test menuitemcheckbox-test areanohref-test' id='areanohref-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='menuitemradio' class='role-test menuitemradio-test areanohref-test' id='areanohref-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='option' class='role-test option-test areanohref-test' id='areanohref-option-7-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='progressbar' class='role-test progressbar-test areanohref-test' id='areanohref-progressbar-8-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='radio' class='role-test radio-test areanohref-test' id='areanohref-radio-9-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='scrollbar' class='role-test scrollbar-test areanohref-test' id='areanohref-scrollbar-10-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='searchbox' class='role-test searchbox-test areanohref-test' id='areanohref-searchbox-11-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='separator' class='role-test separator-test areanohref-test' id='areanohref-separator-12-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='slider' class='role-test slider-test areanohref-test' id='areanohref-slider-13-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='spinbutton' class='role-test spinbutton-test areanohref-test' id='areanohref-spinbutton-14-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='switch' class='role-test switch-test areanohref-test' id='areanohref-switch-15-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='tab' class='role-test tab-test areanohref-test' id='areanohref-tab-16-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='tabpanel' class='role-test tabpanel-test areanohref-test' id='areanohref-tabpanel-17-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='textbox' class='role-test textbox-test areanohref-test' id='areanohref-textbox-18-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='treeitem' class='role-test treeitem-test areanohref-test' id='areanohref-treeitem-19-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='combobox' class='role-test combobox-test areanohref-test' id='areanohref-combobox-0-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='grid' class='role-test grid-test areanohref-test' id='areanohref-grid-1-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='listbox' class='role-test listbox-test areanohref-test' id='areanohref-listbox-2-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='menu' class='role-test menu-test areanohref-test' id='areanohref-menu-3-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='menubar' class='role-test menubar-test areanohref-test' id='areanohref-menubar-4-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='radiogroup' class='role-test radiogroup-test areanohref-test' id='areanohref-radiogroup-5-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='tablist' class='role-test tablist-test areanohref-test' id='areanohref-tablist-6-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='tree' class='role-test tree-test areanohref-test' id='areanohref-tree-7-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='treegrid' class='role-test treegrid-test areanohref-test' id='areanohref-treegrid-8-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='application' class='role-test application-test areanohref-test' id='areanohref-application-0-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='article' class='role-test article-test areanohref-test' id='areanohref-article-1-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='cell' class='role-test cell-test areanohref-test' id='areanohref-cell-2-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='columnheader' class='role-test columnheader-test areanohref-test' id='areanohref-columnheader-3-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='definition' class='role-test definition-test areanohref-test' id='areanohref-definition-4-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='directory' class='role-test directory-test areanohref-test' id='areanohref-directory-5-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='document' class='role-test document-test areanohref-test' id='areanohref-document-6-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='feed' class='role-test feed-test areanohref-test' id='areanohref-feed-7-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='figure' class='role-test figure-test areanohref-test' id='areanohref-figure-8-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='group' class='role-test group-test areanohref-test' id='areanohref-group-9-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='heading' class='role-test heading-test areanohref-test' id='areanohref-heading-10-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='img' class='role-test img-test areanohref-test' id='areanohref-img-11-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='list' class='role-test list-test areanohref-test' id='areanohref-list-12-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='listitem' class='role-test listitem-test areanohref-test' id='areanohref-listitem-13-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='math' class='role-test math-test areanohref-test' id='areanohref-math-14-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='none' class='role-test none-test areanohref-test' id='areanohref-none-15-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='note' class='role-test note-test areanohref-test' id='areanohref-note-16-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='presentation' class='role-test presentation-test areanohref-test' id='areanohref-presentation-17-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='row' class='role-test row-test areanohref-test' id='areanohref-row-18-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='rowgroup' class='role-test rowgroup-test areanohref-test' id='areanohref-rowgroup-19-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='rowheader' class='role-test rowheader-test areanohref-test' id='areanohref-rowheader-20-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='separator' class='role-test separator-test areanohref-test' id='areanohref-separator-21-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='table' class='role-test table-test areanohref-test' id='areanohref-table-22-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='term' class='role-test term-test areanohref-test' id='areanohref-term-23-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='toolbar' class='role-test toolbar-test areanohref-test' id='areanohref-toolbar-24-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='tooltip' class='role-test tooltip-test areanohref-test' id='areanohref-tooltip-25-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='banner' class='role-test banner-test areanohref-test' id='areanohref-banner-0-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='complementary' class='role-test complementary-test areanohref-test' id='areanohref-complementary-1-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='contentinfo' class='role-test contentinfo-test areanohref-test' id='areanohref-contentinfo-2-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='form' class='role-test form-test areanohref-test' id='areanohref-form-3-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='main' class='role-test main-test areanohref-test' id='areanohref-main-4-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='navigation' class='role-test navigation-test areanohref-test' id='areanohref-navigation-5-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='region' class='role-test region-test areanohref-test' id='areanohref-region-6-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='search' class='role-test search-test areanohref-test' id='areanohref-search-7-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='alert' class='role-test alert-test areanohref-test' id='areanohref-alert-0-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='log' class='role-test log-test areanohref-test' id='areanohref-log-1-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='marquee' class='role-test marquee-test areanohref-test' id='areanohref-marquee-2-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='status' class='role-test status-test areanohref-test' id='areanohref-status-3-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='timer' class='role-test timer-test areanohref-test' id='areanohref-timer-4-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='alertdialog' class='role-test alertdialog-test areanohref-test' id='areanohref-alertdialog-0-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <area role='dialog' class='role-test dialog-test areanohref-test' id='areanohref-dialog-1-test' aria-label='acc name' tabindex='0' ></area>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

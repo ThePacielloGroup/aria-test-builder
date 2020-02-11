@@ -5,7 +5,7 @@
     "name": "<a> with href",
     "markup": "<a href='#'></a>",
     "nativeRole": "link",
-    "allowedRoles": ["button", "checkbox", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab", "treeitem"]
+    "allowedRoles": ["button", "checkbox", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab", "treeitem",  "doc-backlink", "doc-biblioref", "doc-glossref", "doc-noteref"]
   },
   "anohref":
   {
@@ -41,6 +41,14 @@
     "nativeRole": "link",
     "allowedRoles": []
   },
+  "areanohref":
+  {
+    "nodeName": "area",
+    "name": "<area>",
+    "markup": "<area></area>",
+    "nativeRole": null,
+    "allowedRoles": []
+  },
   "article":
   {
     "nodeName": "article",
@@ -55,7 +63,7 @@
     "name": "<aside>",
     "markup": "<aside></aside>",
     "nativeRole": "complementary",
-    "allowedRoles": ["feed", "note", "presentation", "none", "region", "search"]
+    "allowedRoles": ["feed", "note", "presentation", "none", "region", "search", "doc-dedication", "doc-example", "doc-footnote", "doc-pullquote", "doc-tip"]
   },
   "audio":
   {
@@ -175,6 +183,14 @@
     "nativeRole": null,
     "allowedRoles": []
   },
+  "data":
+  {
+    "nodeName": "data",
+    "name": "<data>",
+    "markup": "<data></data>",
+    "nativeRole": null,
+    "allowedRoles": "all"
+  },
   "datalist":
   {
     "nodeName": "datalist",
@@ -245,9 +261,9 @@
   {
     "nodeName": "dt",
     "name": "<dt>",
-    "markup": "<dt></dt>",
+    "markup": "<dl><dt></dt></dl>",
     "nativeRole": "term",
-    "allowedRoles": []
+    "allowedRoles": ["listitem"]
   },
   "em":
   {
@@ -280,7 +296,7 @@
     "name": "<fieldset>",
     "markup": "<fieldset></fieldset>",
     "nativeRole": "group",
-    "allowedRoles": ["group", "none", "presentation"]
+    "allowedRoles": ["radiogroup", "none", "presentation"]
   },
   "figure":
   {
@@ -296,7 +312,7 @@
     "name": "<footer>",
     "markup": "<footer></footer>",
     "nativeRole": "contentinfo",
-    "allowedRoles": ["group", "none", "presentation"]
+    "allowedRoles": ["group", "none", "presentation", "doc-footnote"]
   },
   "form":
   {
@@ -312,7 +328,7 @@
     "name": "<h1>",
     "markup": "<h1></h1>",
     "nativeRole": "heading",
-    "allowedRoles": ["tab", "none", "presentation"]
+    "allowedRoles": ["tab", "none", "presentation", "doc-subtitle"]
   },
   "h2":
   {
@@ -320,7 +336,7 @@
     "name": "<h2>",
     "markup": "<h2></h2>",
     "nativeRole": "heading",
-    "allowedRoles": ["tab", "none", "presentation"]
+    "allowedRoles": ["tab", "none", "presentation", "doc-subtitle"]
   },
   "h3":
   {
@@ -328,7 +344,7 @@
     "name": "<h3>",
     "markup": "<h3></h3>",
     "nativeRole": "heading",
-    "allowedRoles": ["tab", "none", "presentation"]
+    "allowedRoles": ["tab", "none", "presentation", "doc-subtitle"]
   },
   "h4":
   {
@@ -336,7 +352,7 @@
     "name": "<h4>",
     "markup": "<h4></h4>",
     "nativeRole": "heading",
-    "allowedRoles": ["tab", "none", "presentation"]
+    "allowedRoles": ["tab", "none", "presentation", "doc-subtitle"]
   },
   "h5":
   {
@@ -344,7 +360,7 @@
     "name": "<h5>",
     "markup": "<h5></h5>",
     "nativeRole": "heading",
-    "allowedRoles": ["tab", "none", "presentation"]
+    "allowedRoles": ["tab", "none", "presentation", "doc-subtitle"]
   },
   "h6":
   {
@@ -352,7 +368,15 @@
     "name": "<h6>",
     "markup": "<h6></h6>",
     "nativeRole": "heading",
-    "allowedRoles": ["tab", "none", "presentation"]
+    "allowedRoles": ["tab", "none", "presentation", "doc-subtitle"]
+  },
+  "head":
+  {
+    "nodeName": "head",
+    "name": "<head>",
+    "markup": "<head></head>",
+   "nativeRole": null,
+    "allowedRoles": []
   },
   "header":
   {
@@ -362,13 +386,21 @@
     "nativeRole": "banner",
     "allowedRoles": ["group", "none", "presentation"]
   },
+   "hgroup":
+  {
+    "nodeName": "hgroup",
+    "name": "<hgroup>",
+    "markup": "<hgroup></hgroup>",
+    "nativeRole": null,
+    "allowedRoles": "all"
+  },
   "hr":
   {
     "nodeName": "hr",
     "name": "<hr>",
     "markup": "<hr></hr>",
     "nativeRole": "separator",
-    "allowedRoles": ["none", "presentation"]
+    "allowedRoles": ["none", "presentation", "doc-pagebreak"]
   },
   "i":
   {
@@ -384,13 +416,13 @@
     "name": "<iframe>",
     "markup": "<iframe></iframe>",
     "nativeRole": null,
-    "allowedRoles": ["application", "document", "img"]
+    "allowedRoles": ["none", "presentation", "application", "document", "img"]
   },
   "img-noalt":
   {
     "nodeName": "imgEmptyAlt",
     "name": "<imgEmptyAlt>",
-    "markup": "<img alt='' />",
+    "markup": "<img alt=''>",
     "nativeRole": null,
     "allowedRoles": ["none", "presentation"]
   },
@@ -398,7 +430,7 @@
   {
     "nodeName": "imgWithAlt",
     "name": "<imgWithAlt>",
-    "markup": "<img alt='some text' />",
+    "markup": "<img alt='some text'>",
     "allowedRoles": "all",
     "nativeRole": "img",
     "excludedRoles": ["presentation", "none"]
@@ -406,128 +438,128 @@
   "input-button":
   {
     "nodeName": "input",
-    "name": "<input type='Button' />",
-    "markup": "<input type='button'/>",
+    "name": "<input type='Button'>",
+    "markup": "<input type='button'>",
     "nativeRole": "button",
     "allowedRoles": ["link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
   },
   "input-checkbox":
   {
     "nodeName": "input",
-    "name": "<input type='Checkbox' />",
-    "markup": "<input type='checkbox'/>",
+    "name": "<input type='Checkbox'>",
+    "markup": "<input type='checkbox'>",
     "nativeRole": "checkbox",
     "allowedRoles": ["button", "menuitemcheckbox", "option", "switch"]
   },
   "input-color":
   {
     "nodeName": "input",
-    "name": "<input type='Color' />",
-    "markup": "<input type='color'/>",
+    "name": "<input type='Color'>",
+    "markup": "<input type='color'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-date":
   {
     "nodeName": "input",
-    "name": "<input type='Date' />",
-    "markup": "<input type='date' />",
+    "name": "<input type='Date'>",
+    "markup": "<input type='date'>",
     "nativeRole": null,
     "allowedRoles": []
   },
-  "input-datetime":
+  "input-datetime-local":
   {
     "nodeName": "input",
-    "name": "<input type='DateTime' />",
-    "markup": "<input type='datetime'>",
+    "name": "<input type='datetime-local'>",
+    "markup": "<input type='datetime-local'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-Email":
   {
     "nodeName": "input",
-    "name": "<input type='Email' />",
-    "markup": "<input type='email'/>",
+    "name": "<input type='Email'>",
+    "markup": "<input type='email'>",
     "nativeRole": "textbox",
     "allowedRoles": []
   },
   "input-File":
   {
     "nodeName": "input",
-    "name": "<input type='File' />",
-    "markup": "<input type='file'/>",
+    "name": "<input type='File'>",
+    "markup": "<input type='file'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-Hidden":
   {
     "nodeName": "input",
-    "name": "<input type='Hidden' />",
-    "markup": "<input type=hidden />",
+    "name": "<input type='Hidden'>",
+    "markup": "<input type='hidden'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-Image":
   {
     "nodeName": "input",
-    "name": "<input type='Image' />",
-    "markup": "<input type='image'/>",
+    "name": "<input type='Image'>",
+    "markup": "<input type='image'>",
     "nativeRole": "button",
     "allowedRoles": ["link", "menuitem", "menuitemcheckbox", "menuitemradio", "radio", "switch"]
   },
   "input-Month":
   {
     "nodeName": "input",
-    "name": "<input type='Month' />",
-    "markup": "<input type='month'/>",
+    "name": "<input type='Month'>",
+    "markup": "<input type='month'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-Number":
   {
     "nodeName": "input",
-    "name": "<input type='Number' />",
-    "markup": "<input type='number'/>",
+    "name": "<input type='Number'>",
+    "markup": "<input type='number'>",
     "nativeRole": "spinbutton",
     "allowedRoles": []
   },
   "input-Password":
   {
     "nodeName": "input",
-    "name": "<input type='Password' />",
-    "markup": "<input type='password'/>",
+    "name": "<input type='Password'>",
+    "markup": "<input type='password'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-Radio":
   {
     "nodeName": "input",
-    "name": "<input type='Radio' />",
-    "markup": "<input type='radio'/>",
+    "name": "<input type='Radio'>",
+    "markup": "<input type='radio'>",
     "nativeRole": "radio",
     "allowedRoles": ["menuitemradio"]
   },
   "input-Range":
   {
     "nodeName": "input",
-    "name": "<input type='Range' />",
-    "markup": "<input type='range'/>",
+    "name": "<input type='Range'>",
+    "markup": "<input type='range'>",
     "nativeRole": "slider",
     "allowedRoles": []
   },
   "input-Reset":
   {
     "nodeName": "input",
-    "name": "<input type='Reset' />",
-    "markup": "<input type='reset'/>",
+    "name": "<input type='Reset'>",
+    "markup": "<input type='reset'>",
     "nativeRole": "button",
     "allowedRoles": []
   },
   "input-Search":
   {
     "nodeName": "input",
-    "name": "<input type='Search' />",
-    "markup": "<input type='search'/>",
+    "name": "<input type='Search'>",
+    "markup": "<input type='search'>",
     "nativeRole": "searchbox",
     "allowedRoles": []
   },
@@ -550,36 +582,36 @@
   "input-Text":
   {
     "nodeName": "input",
-    "name": "<input type='Text' />",
-    "markup": "<input type='text'/>",
+    "name": "<input type='Text'>",
+    "markup": "<input type='text'>",
     "nativeRole": "textbox",
-    "allowedRoles": []
+    "allowedRoles": ["combobox", "searchbox", "spinbutton"]
   },
   "input-Time":
   {
     "nodeName": "input",
-    "name": "<input type='Time' />",
-    "markup": "<input type='time'/>",
+    "name": "<input type='Time'>",
+    "markup": "<input type='time'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-Url":
   {
     "nodeName": "input",
-    "name": "<input type='Url' />",
-    "markup": "<input type='url'/>",
+    "name": "<input type='Url'>",
+    "markup": "<input type='url'>",
     "nativeRole": "textbox",
     "allowedRoles": []
   },
   "input-Week":
   {
     "nodeName": "input",
-    "name": "<input type='Week' />",
-    "markup": "<input type='week'/>",
+    "name": "<input type='Week'>",
+    "markup": "<input type='week'>",
     "nativeRole": null,
     "allowedRoles": []
   },
-  "ins-del":
+  "ins":
   {
     "nodeName": "ins",
     "name": "<ins>",
@@ -587,14 +619,7 @@
     "nativeRole": null,
     "allowedRoles": "all"
   },
-  "del":
-  {
-    "nodeName": "del",
-    "name": "<del>",
-    "markup": "<del></del>",
-    "nativeRole": null,
-    "allowedRoles": "all"
-  },
+ 
   "kbd":
   {
     "nodeName": "kbd",
@@ -604,14 +629,6 @@
     "allowedRoles": "all"
   },
 
-  "keygen":
-  {
-    "nodeName": "keygen",
-    "name": "<keygen>",
-    "markup": "<keygen></keygen>",
-    "nativeRole": null,
-    "allowedRoles": []
-  },
   "label":
   {
     "nodeName": "label",
@@ -633,7 +650,7 @@
     "name": "<li>",
     "markup": "<li></li>",
     "nativeRole": "listitem",
-    "allowedRoles": ["menuitem", "menuitemcheckbox", "menuitemradio", "option", "none", "presentation", "radio", "separator", "tab", "treeitem"]
+    "allowedRoles": ["menuitem", "menuitemcheckbox", "menuitemradio", "option", "none", "presentation", "radio", "separator", "tab", "treeitem", "doc-biblioentry", "doc-endnote"]
   },
   "link":
   {
@@ -676,38 +693,15 @@
     "nativeRole": "math",
     "allowedRoles": []
   },
-  "menu-context":
+  "menu":
   {
     "nodeName": "menu",
-    "name": "<menu type='context'>",
-    "markup": "<menu type='context'></menu>",
+    "name": "<menu>",
+    "markup": "<menu></menu>",
     "nativeRole": "menu",
-    "allowedRoles": []
+    "allowedRoles": [ "directory", "group", "listbox", "menu", "menubar", "radiogroup", "tablist", "toolbar", "tree", "presentation", "none"]
   },
-  "menuitem-command":
-  {
-    "nodeName": "menuitem",
-    "name": "<menuitem type='command'>",
-    "markup": "<menuitem type='command'></menuitem>",
-    "nativeRole": "menuitem",
-    "allowedRoles": []
-  },
-  "menuitem-checkbox":
-  {
-    "nodeName": "menuitem",
-    "name": "<menuitem type='checkbox'>",
-    "markup": "<menuitem type='checkbox'></menuitem>",
-    "nativeRole": "menuitemcheckbox",
-    "allowedRoles": []
-  },
-  "menuitem-radio":
-  {
-    "nodeName": "menuitem",
-    "name": "<menuitem type='radio'>",
-    "markup": "<menuitem type='radio'></menuitem>",
-    "nativeRole": "menuitemradio",
-    "allowedRoles": []
-  },
+ 
   "meta":
   {
     "nodeName": "meta",
@@ -730,7 +724,7 @@
     "name": "<nav>",
     "markup": "<nav></nav>",
     "nativeRole": "navigation",
-    "allowedRoles": []
+    "allowedRoles": ["doc-index", "doc-pagelist", "doc-toc"]
   },
   "noscript":
   {
@@ -785,6 +779,7 @@
     "nodeName": "p",
     "name": "<p>",
     "markup": "<p></p>",
+	"nativeRole": null,
     "allowedRoles": "all"
   },
   "param":
@@ -802,6 +797,14 @@
     "markup": "<picture></picture>",
     "nativeRole": null,
     "allowedRoles": []
+  },
+   "pre":
+  {
+    "nodeName": "pre",
+    "name": "<pre>",
+    "markup": "<pre></pre>",
+	"nativeRole": null,
+    "allowedRoles": "all"
   },
   "progress":
   {
@@ -873,7 +876,7 @@
     "name": "<section>",
     "markup": "<section></section>",
     "nativeRole": "region",
-    "allowedRoles": ["alert", "alertdialog", "application", "banner", "complementary", "contentinfo", "dialog", "document", "feed", "log", "main", "marquee", "navigation", "none", "presentation", "search", "status", "tabpanel"]
+    "allowedRoles": ["alert", "alertdialog", "application", "banner", "complementary", "contentinfo", "dialog", "document", "feed", "log", "main", "marquee", "navigation", "none", "note", "presentation", "search", "status", "tabpanel",  "doc-abstract", "doc-acknowledgments", "doc-afterword", "doc-appendix", "doc-bibliography", "doc-chapter", "doc-colophon", "doc-conclusion", "doc-credit", "doc-credits", "doc-dedication", "doc-endnotes", "doc-epigraph", "doc-epilogue", "doc-errata", "doc-example", "doc-foreword", "doc-glossary", "doc-index", "doc-introduction", "doc-notice", "doc-pagelist", "doc-part", "doc-preface", "doc-prologue", "doc-pullquote", "doc-qna", "doc-toc"]
   },
   "select":
   {
@@ -891,6 +894,15 @@
     "nativeRole": "listbox",
     "allowedRoles": []
   },
+  "slot":
+  {
+    "nodeName": "slot",
+    "name": "<slot>",
+    "markup": "<slot></slot>",
+    "nativeRole": null,
+    "allowedRoles": []
+  },
+  
   "small":
   {
     "nodeName": "small",
@@ -978,7 +990,7 @@
   {
     "nodeName": "table",
     "name": "<table>",
-    "markup": "<table></table>",
+    "markup": "<table><tr><td></table>",
     "nativeRole": "table",
     "allowedRoles": "all"
   },
@@ -1087,7 +1099,7 @@
     "name": "<ul>",
     "markup": "<ul></ul>",
     "nativeRole": "list",
-    "allowedRoles": ["directory", "group", "listbox", "menu", "menubar", "radiogroup", "tablist", "toolbar", "tree", "presentation"]
+    "allowedRoles": ["directory", "group", "listbox", "menu", "menubar", "radiogroup", "tablist", "toolbar", "tree", "presentation", "none"]
   },
   "var":
   {
