@@ -574,6 +574,45 @@
         "alertdialog",
         "dialog"
     ],
+	
+	"dpub": [
+        "doc-abstract", 
+		"doc-acknowledgments", 
+		"doc-afterword", 
+		"doc-appendix", 
+		"doc-backlink",
+		"doc-biblioref",
+		"doc-bibliography", 
+		"doc-chapter", 
+		"doc-colophon", 
+		"doc-conclusion", 
+		"doc-credit", 
+		"doc-credits", 
+		"doc-dedication", 
+		"doc-endnotes", 
+		"doc-epigraph", 
+		"doc-epilogue", 
+		"doc-errata", 
+		"doc-example",
+        "doc-footnote",		
+		"doc-foreword", 
+		"doc-glossref", 
+		"doc-glossary", 
+		"doc-index", 
+		"doc-introduction",
+        "doc-noteref",		
+		"doc-notice", 
+		"doc-pagelist", 
+		"doc-part", 
+		"doc-preface", 
+		"doc-prologue", 
+		"doc-pullquote", 
+		"doc-qna", 
+		"doc-subtitle",
+		"doc-toc", 
+		"doc-tip"
+    ],
+	
     "categories": [
     {
         "name": "Widget roles",
@@ -598,5 +637,9 @@
     {
         "name": "Window region roles",
         "id": "window"
+    },
+    {
+        "name": "dpub roles",
+        "id": "dpub"
     }]
-}
+	}

@@ -8,13 +8,13 @@
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-htmlmin": "^3.1.0",
-    "grunt-html": "^12.1.0",
+    "grunt-html": "^12.2.0",
     "grunt-prompt": "^1.3.3",
-    "handlebars": "^4.7.2",
+    "handlebars": "^4.7.3",
     "load-grunt-tasks": "^5.1.0"
   },
   "dependencies": {
     "portastic": "^1.0.1",
-    "vnu-jar": "^20.1.2"
+    "vnu-jar": "^20.2.28"
   }
 }
