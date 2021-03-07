@@ -298,7 +298,7 @@
     "name": "<fieldset>",
     "markup": "<fieldset></fieldset>",
     "nativeRole": "group",
-    "allowedRoles": ["group", "none", "presentation", "radiogroup"]
+    "allowedRoles": ["none", "presentation", "radiogroup"]
   },
   "figurenofigcaption":
   {
@@ -418,15 +418,23 @@
     "name": "<iframe>",
     "markup": "<iframe></iframe>",
     "nativeRole": null,
-    "allowedRoles": ["application", "document", "img"]
+    "allowedRoles": ["application", "document", "img", "none", "presentation"]
   },
-  "img-noalt":
+  "img-emptyalt":
   {
     "nodeName": "imgEmptyAlt",
     "name": "<imgEmptyAlt>",
     "markup": "<img alt='' />",
     "nativeRole": null,
-    "allowedRoles": ["none", "presentation"]
+    "allowedRoles": []
+  },
+  "img-noalt":
+  {
+    "nodeName": "imgEmptyAlt",
+    "name": "<imgEmptyAlt>",
+    "markup": "<img>",
+    "nativeRole": "img",
+    "allowedRoles": []
   },
   "img":
   {
@@ -435,12 +443,12 @@
     "markup": "<img alt='some text' />",
     "allowedRoles": "all",
     "nativeRole": "img",
-    "excludedRoles": ["presentation", "none"]
+    "excludedRoles": ["button", "checkbox", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "progressbar", "scrollbar", "separator", "slider", "switch", "tab", "treeitem"]
   },
   "input-button":
   {
     "nodeName": "input",
-    "name": "<input type='Button' />",
+    "name": "<input type='button' />",
     "markup": "<input type='button'/>",
     "nativeRole": "button",
     "allowedRoles": ["link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
@@ -448,7 +456,7 @@
   "input-checkbox":
   {
     "nodeName": "input",
-    "name": "<input type='Checkbox' />",
+    "name": "<input type='checkbox' />",
     "markup": "<input type='checkbox'/>",
     "nativeRole": "checkbox",
     "allowedRoles": ["button", "menuitemcheckbox", "option", "switch"]
@@ -456,7 +464,7 @@
   "input-color":
   {
     "nodeName": "input",
-    "name": "<input type='Color' />",
+    "name": "<input type='color' />",
     "markup": "<input type='color'/>",
     "nativeRole": null,
     "allowedRoles": []
@@ -464,7 +472,7 @@
   "input-date":
   {
     "nodeName": "input",
-    "name": "<input type='Date' />",
+    "name": "<input type='date' />",
     "markup": "<input type='date' />",
     "nativeRole": null,
     "allowedRoles": []
@@ -472,15 +480,15 @@
   "input-datetime":
   {
     "nodeName": "input",
-    "name": "<input type='DateTime' />",
-    "markup": "<input type='datetime'>",
+    "name": "<input type='datetime-local' />",
+    "markup": "<input type='datetime-local'>",
     "nativeRole": null,
     "allowedRoles": []
   },
   "input-Email":
   {
     "nodeName": "input",
-    "name": "<input type='Email' />",
+    "name": "<input type='email' />",
     "markup": "<input type='email'/>",
     "nativeRole": "textbox",
     "allowedRoles": []
