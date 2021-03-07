@@ -528,7 +528,7 @@
   "input-Number":
   {
     "nodeName": "input",
-    "name": "<input type='Number' />",
+    "name": "<input type='number' />",
     "markup": "<input type='number'/>",
     "nativeRole": "spinbutton",
     "allowedRoles": []
@@ -536,7 +536,7 @@
   "input-Password":
   {
     "nodeName": "input",
-    "name": "<input type='Password' />",
+    "name": "<input type='password' />",
     "markup": "<input type='password'/>",
     "nativeRole": null,
     "allowedRoles": []
@@ -544,7 +544,7 @@
   "input-Radio":
   {
     "nodeName": "input",
-    "name": "<input type='Radio' />",
+    "name": "<input type='radio' />",
     "markup": "<input type='radio'/>",
     "nativeRole": "radio",
     "allowedRoles": ["menuitemradio"]
@@ -552,7 +552,7 @@
   "input-Range":
   {
     "nodeName": "input",
-    "name": "<input type='Range' />",
+    "name": "<input type='range' />",
     "markup": "<input type='range'/>",
     "nativeRole": "slider",
     "allowedRoles": []
@@ -560,7 +560,7 @@
   "input-Reset":
   {
     "nodeName": "input",
-    "name": "<input type='Reset' />",
+    "name": "<input type='reset' />",
     "markup": "<input type='reset'/>",
     "nativeRole": "button",
     "allowedRoles": []
@@ -568,7 +568,7 @@
   "input-Search":
   {
     "nodeName": "input",
-    "name": "<input type='Search' />",
+    "name": "<input type='search' />",
     "markup": "<input type='search'/>",
     "nativeRole": "searchbox",
     "allowedRoles": []
@@ -576,7 +576,7 @@
   "input-Submit":
   {
     "nodeName": "input",
-    "name": "<input type='Submit' />",
+    "name": "<input type='submit' />",
     "markup": "<input type='submit'/>",
     "nativeRole": "button",
     "allowedRoles": []
@@ -584,7 +584,7 @@
   "input-Tel":
   {
     "nodeName": "input",
-    "name": "<input type='Tel' />",
+    "name": "<input type='tel' />",
     "markup": "<input type='tel'/>",
     "nativeRole": "textbox",
     "allowedRoles": []
@@ -592,7 +592,7 @@
   "input-Text":
   {
     "nodeName": "input",
-    "name": "<input type='Text' />",
+    "name": "<input type='text' />",
     "markup": "<input type='text'/>",
     "nativeRole": "textbox",
     "allowedRoles": []
@@ -600,7 +600,7 @@
   "input-Time":
   {
     "nodeName": "input",
-    "name": "<input type='Time' />",
+    "name": "<input type='time' />",
     "markup": "<input type='time'/>",
     "nativeRole": null,
     "allowedRoles": []
@@ -718,37 +718,13 @@
     "nativeRole": "math",
     "allowedRoles": []
   },
-  "menu-context":
+  "menu":
   {
     "nodeName": "menu",
-    "name": "<menu type='context'>",
-    "markup": "<menu type='context'></menu>",
+    "name": "<menu>",
+    "markup": "<menu></menu>",
     "nativeRole": "menu",
-    "allowedRoles": []
-  },
-  "menuitem-command":
-  {
-    "nodeName": "menuitem",
-    "name": "<menuitem type='command'>",
-    "markup": "<menuitem type='command'></menuitem>",
-    "nativeRole": "menuitem",
-    "allowedRoles": []
-  },
-  "menuitem-checkbox":
-  {
-    "nodeName": "menuitem",
-    "name": "<menuitem type='checkbox'>",
-    "markup": "<menuitem type='checkbox'></menuitem>",
-    "nativeRole": "menuitemcheckbox",
-    "allowedRoles": []
-  },
-  "menuitem-radio":
-  {
-    "nodeName": "menuitem",
-    "name": "<menuitem type='radio'>",
-    "markup": "<menuitem type='radio'></menuitem>",
-    "nativeRole": "menuitemradio",
-    "allowedRoles": []
+    "allowedRoles": ["directory", "group", "listbox", "menu", "menubar", "none", "presentation", "radiogroup", "tablist", "toolbar", "tree"]
   },
   "meta":
   {
@@ -772,7 +748,7 @@
     "name": "<nav>",
     "markup": "<nav></nav>",
     "nativeRole": "navigation",
-    "allowedRoles": []
+    "allowedRoles": ["menu", "menubar", "tablist"]
   },
   "noscript":
   {
@@ -851,6 +827,14 @@
     "name": "<progress>",
     "markup": "<progress></progress>",
     "nativeRole": "progressbar",
+    "allowedRoles": []
+  },
+  "pre":
+  {
+    "nodeName": "pre",
+    "name": "<pre>",
+    "markup": "<pre></pre>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "q":
@@ -915,7 +899,7 @@
     "name": "<section>",
     "markup": "<section></section>",
     "nativeRole": "region",
-    "allowedRoles": ["alert", "alertdialog", "application", "banner", "complementary", "contentinfo", "dialog", "document", "feed", "log", "main", "marquee", "navigation", "none", "presentation", "search", "status", "tabpanel"]
+    "allowedRoles": ["alert", "alertdialog", "application", "banner", "complementary", "contentinfo", "dialog", "document", "feed", "log", "main", "marquee", "navigation", "none", "note", "presentation", "search", "status", "tabpanel"]
   },
   "select":
   {
