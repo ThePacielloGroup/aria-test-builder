@@ -65,7 +65,7 @@
     "nativeRole": null,
     "allowedRoles": ["application"]
   },
-  "autonomous custom element":
+  "autonomouscustomelement":
   {
     "nodeName": "custom-el",
     "name": "<custom-el>",
