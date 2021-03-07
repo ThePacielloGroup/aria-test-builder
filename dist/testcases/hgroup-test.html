@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;hgroup&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;hgroup&gt;</h1>
+    <p>Last updated: 06 March 2021 23:13:56</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong><a href="https://w3c.github.io/html-aria/#dfn-any-role">any</a></strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='button' class='role-test button-test hgroup-test' id='hgroup-button-0-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='checkbox' class='role-test checkbox-test hgroup-test' id='hgroup-checkbox-1-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='gridcell' class='role-test gridcell-test hgroup-test' id='hgroup-gridcell-2-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='link' class='role-test link-test hgroup-test' id='hgroup-link-3-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='menuitem' class='role-test menuitem-test hgroup-test' id='hgroup-menuitem-4-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='menuitemcheckbox' class='role-test menuitemcheckbox-test hgroup-test' id='hgroup-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='menuitemradio' class='role-test menuitemradio-test hgroup-test' id='hgroup-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='option' class='role-test option-test hgroup-test' id='hgroup-option-7-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='progressbar' class='role-test progressbar-test hgroup-test' id='hgroup-progressbar-8-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='radio' class='role-test radio-test hgroup-test' id='hgroup-radio-9-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='scrollbar' class='role-test scrollbar-test hgroup-test' id='hgroup-scrollbar-10-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='searchbox' class='role-test searchbox-test hgroup-test' id='hgroup-searchbox-11-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='separator' class='role-test separator-test hgroup-test' id='hgroup-separator-12-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='slider' class='role-test slider-test hgroup-test' id='hgroup-slider-13-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='spinbutton' class='role-test spinbutton-test hgroup-test' id='hgroup-spinbutton-14-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='switch' class='role-test switch-test hgroup-test' id='hgroup-switch-15-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='tab' class='role-test tab-test hgroup-test' id='hgroup-tab-16-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='tabpanel' class='role-test tabpanel-test hgroup-test' id='hgroup-tabpanel-17-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='textbox' class='role-test textbox-test hgroup-test' id='hgroup-textbox-18-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='treeitem' class='role-test treeitem-test hgroup-test' id='hgroup-treeitem-19-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='combobox' class='role-test combobox-test hgroup-test' id='hgroup-combobox-0-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='grid' class='role-test grid-test hgroup-test' id='hgroup-grid-1-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='listbox' class='role-test listbox-test hgroup-test' id='hgroup-listbox-2-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='menu' class='role-test menu-test hgroup-test' id='hgroup-menu-3-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='menubar' class='role-test menubar-test hgroup-test' id='hgroup-menubar-4-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='radiogroup' class='role-test radiogroup-test hgroup-test' id='hgroup-radiogroup-5-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='tablist' class='role-test tablist-test hgroup-test' id='hgroup-tablist-6-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='tree' class='role-test tree-test hgroup-test' id='hgroup-tree-7-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='treegrid' class='role-test treegrid-test hgroup-test' id='hgroup-treegrid-8-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='application' class='role-test application-test hgroup-test' id='hgroup-application-0-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='article' class='role-test article-test hgroup-test' id='hgroup-article-1-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='cell' class='role-test cell-test hgroup-test' id='hgroup-cell-2-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='columnheader' class='role-test columnheader-test hgroup-test' id='hgroup-columnheader-3-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='definition' class='role-test definition-test hgroup-test' id='hgroup-definition-4-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='directory' class='role-test directory-test hgroup-test' id='hgroup-directory-5-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='document' class='role-test document-test hgroup-test' id='hgroup-document-6-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='feed' class='role-test feed-test hgroup-test' id='hgroup-feed-7-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='figure' class='role-test figure-test hgroup-test' id='hgroup-figure-8-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='group' class='role-test group-test hgroup-test' id='hgroup-group-9-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='heading' class='role-test heading-test hgroup-test' id='hgroup-heading-10-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='img' class='role-test img-test hgroup-test' id='hgroup-img-11-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='list' class='role-test list-test hgroup-test' id='hgroup-list-12-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='listitem' class='role-test listitem-test hgroup-test' id='hgroup-listitem-13-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='math' class='role-test math-test hgroup-test' id='hgroup-math-14-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='none' class='role-test none-test hgroup-test' id='hgroup-none-15-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='note' class='role-test note-test hgroup-test' id='hgroup-note-16-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='presentation' class='role-test presentation-test hgroup-test' id='hgroup-presentation-17-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='row' class='role-test row-test hgroup-test' id='hgroup-row-18-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='rowgroup' class='role-test rowgroup-test hgroup-test' id='hgroup-rowgroup-19-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='rowheader' class='role-test rowheader-test hgroup-test' id='hgroup-rowheader-20-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='separator' class='role-test separator-test hgroup-test' id='hgroup-separator-21-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='table' class='role-test table-test hgroup-test' id='hgroup-table-22-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='term' class='role-test term-test hgroup-test' id='hgroup-term-23-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='toolbar' class='role-test toolbar-test hgroup-test' id='hgroup-toolbar-24-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='tooltip' class='role-test tooltip-test hgroup-test' id='hgroup-tooltip-25-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='banner' class='role-test banner-test hgroup-test' id='hgroup-banner-0-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='complementary' class='role-test complementary-test hgroup-test' id='hgroup-complementary-1-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='contentinfo' class='role-test contentinfo-test hgroup-test' id='hgroup-contentinfo-2-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='form' class='role-test form-test hgroup-test' id='hgroup-form-3-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='main' class='role-test main-test hgroup-test' id='hgroup-main-4-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='navigation' class='role-test navigation-test hgroup-test' id='hgroup-navigation-5-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='region' class='role-test region-test hgroup-test' id='hgroup-region-6-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='search' class='role-test search-test hgroup-test' id='hgroup-search-7-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='alert' class='role-test alert-test hgroup-test' id='hgroup-alert-0-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='log' class='role-test log-test hgroup-test' id='hgroup-log-1-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='marquee' class='role-test marquee-test hgroup-test' id='hgroup-marquee-2-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='status' class='role-test status-test hgroup-test' id='hgroup-status-3-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='timer' class='role-test timer-test hgroup-test' id='hgroup-timer-4-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='alertdialog' class='role-test alertdialog-test hgroup-test' id='hgroup-alertdialog-0-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='dialog' class='role-test dialog-test hgroup-test' id='hgroup-dialog-1-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>dpub roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-abstract&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-abstract' class='role-test doc-abstract-test hgroup-test' id='hgroup-doc-abstract-0-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-acknowledgments&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-acknowledgments' class='role-test doc-acknowledgments-test hgroup-test' id='hgroup-doc-acknowledgments-1-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-afterword&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-afterword' class='role-test doc-afterword-test hgroup-test' id='hgroup-doc-afterword-2-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-appendix&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-appendix' class='role-test doc-appendix-test hgroup-test' id='hgroup-doc-appendix-3-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-backlink&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-backlink' class='role-test doc-backlink-test hgroup-test' id='hgroup-doc-backlink-4-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-biblioref&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-biblioref' class='role-test doc-biblioref-test hgroup-test' id='hgroup-doc-biblioref-5-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-bibliography&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-bibliography' class='role-test doc-bibliography-test hgroup-test' id='hgroup-doc-bibliography-6-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-chapter&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-chapter' class='role-test doc-chapter-test hgroup-test' id='hgroup-doc-chapter-7-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-colophon&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-colophon' class='role-test doc-colophon-test hgroup-test' id='hgroup-doc-colophon-8-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-conclusion&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-conclusion' class='role-test doc-conclusion-test hgroup-test' id='hgroup-doc-conclusion-9-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-credit&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-credit' class='role-test doc-credit-test hgroup-test' id='hgroup-doc-credit-10-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-credits&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-credits' class='role-test doc-credits-test hgroup-test' id='hgroup-doc-credits-11-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-dedication&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-dedication' class='role-test doc-dedication-test hgroup-test' id='hgroup-doc-dedication-12-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-endnotes&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-endnotes' class='role-test doc-endnotes-test hgroup-test' id='hgroup-doc-endnotes-13-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-epigraph&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-epigraph' class='role-test doc-epigraph-test hgroup-test' id='hgroup-doc-epigraph-14-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-epilogue&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-epilogue' class='role-test doc-epilogue-test hgroup-test' id='hgroup-doc-epilogue-15-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-errata&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-errata' class='role-test doc-errata-test hgroup-test' id='hgroup-doc-errata-16-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-example&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-example' class='role-test doc-example-test hgroup-test' id='hgroup-doc-example-17-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-footnote&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-footnote' class='role-test doc-footnote-test hgroup-test' id='hgroup-doc-footnote-18-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-foreword&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-foreword' class='role-test doc-foreword-test hgroup-test' id='hgroup-doc-foreword-19-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-glossref&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-glossref' class='role-test doc-glossref-test hgroup-test' id='hgroup-doc-glossref-20-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-glossary&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-glossary' class='role-test doc-glossary-test hgroup-test' id='hgroup-doc-glossary-21-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-index&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-index' class='role-test doc-index-test hgroup-test' id='hgroup-doc-index-22-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-introduction&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-introduction' class='role-test doc-introduction-test hgroup-test' id='hgroup-doc-introduction-23-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-noteref&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-noteref' class='role-test doc-noteref-test hgroup-test' id='hgroup-doc-noteref-24-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-notice&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-notice' class='role-test doc-notice-test hgroup-test' id='hgroup-doc-notice-25-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-pagelist&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-pagelist' class='role-test doc-pagelist-test hgroup-test' id='hgroup-doc-pagelist-26-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-part&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-part' class='role-test doc-part-test hgroup-test' id='hgroup-doc-part-27-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-preface&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-preface' class='role-test doc-preface-test hgroup-test' id='hgroup-doc-preface-28-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-prologue&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-prologue' class='role-test doc-prologue-test hgroup-test' id='hgroup-doc-prologue-29-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-pullquote&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-pullquote' class='role-test doc-pullquote-test hgroup-test' id='hgroup-doc-pullquote-30-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-qna&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-qna' class='role-test doc-qna-test hgroup-test' id='hgroup-doc-qna-31-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-subtitle&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-subtitle' class='role-test doc-subtitle-test hgroup-test' id='hgroup-doc-subtitle-32-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-toc&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-toc' class='role-test doc-toc-test hgroup-test' id='hgroup-doc-toc-33-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;doc-tip&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <hgroup role='doc-tip' class='role-test doc-tip-test hgroup-test' id='hgroup-doc-tip-34-test' aria-label='acc name' tabindex='0' ></hgroup>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>
