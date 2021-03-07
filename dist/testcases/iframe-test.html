@@ -86,19 +86,11 @@
   
     <header>
     <h1>ARIA in HTML - test cases for &lt;iframe&gt;</h1>
-    <p>Last updated: 08 March 2020 22:35:47</p>
+    <p>Last updated: 06 March 2021 23:13:57</p>
      
     <p>
       <a href="https://w3c.github.io/html-aria/#iframe">Allowed Roles</a>:</p>
     <ul class="roleSummaryList">
-      <li>
-        <a href="https://w3c.github.io/html-aria/#index-aria-none">none</a>
-         , 
-      </li>
-      <li>
-        <a href="https://w3c.github.io/html-aria/#index-aria-presentation">presentation</a>
-         , 
-      </li>
       <li>
         <a href="https://w3c.github.io/html-aria/#index-aria-application">application</a>
          , 
@@ -520,9 +512,10 @@
         <iframe role='math' class='role-test math-test iframe-test' id='iframe-math-14-test' aria-label='acc name' tabindex='0' ></iframe>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;none&quot; (
-          <span class="allowed">Allowed</span>
-)
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
           
         </h4>
         <iframe role='none' class='role-test none-test iframe-test' id='iframe-none-15-test' aria-label='acc name' tabindex='0' ></iframe>
@@ -537,9 +530,10 @@
         <iframe role='note' class='role-test note-test iframe-test' id='iframe-note-16-test' aria-label='acc name' tabindex='0' ></iframe>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;presentation&quot; (
-          <span class="allowed">Allowed</span>
-)
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
           
         </h4>
         <iframe role='presentation' class='role-test presentation-test iframe-test' id='iframe-presentation-17-test' aria-label='acc name' tabindex='0' ></iframe>
