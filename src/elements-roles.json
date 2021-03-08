@@ -87,7 +87,7 @@
   {
     "nodeName": "base",
     "name": "<base>",
-    "markup": "<base></base>",
+    "markup": "<base>",
     "nativeRole": null,
     "allowedRoles": []
   },
@@ -113,11 +113,11 @@
   {
     "nodeName": "br",
     "name": "<br>",
-    "markup": "<br></br>",
+    "markup": "<br>",
     "nativeRole": null,
     "allowedRoles": ["presentation", "none"]
   },
-  
+
   "blockquote":
   {
     "nodeName": "blockquote",
