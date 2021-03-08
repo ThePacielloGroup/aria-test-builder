@@ -595,7 +595,7 @@
     "name": "<input type='text' />",
     "markup": "<input type='text'/>",
     "nativeRole": "textbox",
-    "allowedRoles": []
+    "allowedRoles": ["combobox", "searchbox", "spinbutton"]
   },
   "input-Time":
   {
