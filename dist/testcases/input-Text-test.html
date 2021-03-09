@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Text&#x27; /&gt;</title>
+  <title>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;text&#x27; /&gt;</title>
   <style>
   body {
     background: #f7f7f5;
@@ -85,13 +85,26 @@
 <body>
   
     <header>
-    <h1>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Text&#x27; /&gt;</h1>
-    <p>Last updated: 06 March 2021 23:14:06</p>
-         <p>
-      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
-    </p>
-  
+    <h1>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;text&#x27; /&gt;</h1>
+    <p>Last updated: 09 March 2021 14:05:46</p>
      
+    <p>
+      <a href="https://w3c.github.io/html-aria/#input-Text">Allowed Roles</a>:</p>
+    <ul class="roleSummaryList">
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-combobox">combobox</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-searchbox">searchbox</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-spinbutton">spinbutton</a>
+        
+      </li>
+    </ul>
+ 
     </header>
     <main>
     <h2>Tests</h2>
@@ -197,10 +210,9 @@
         <input type='text' role='scrollbar' class='role-test scrollbar-test input-Text-test' id='input-Text-scrollbar-10-test' aria-label='acc name' tabindex='0' />
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;searchbox&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
         <input type='text' role='searchbox' class='role-test searchbox-test input-Text-test' id='input-Text-searchbox-11-test' aria-label='acc name' tabindex='0' />
@@ -224,10 +236,9 @@
         <input type='text' role='slider' class='role-test slider-test input-Text-test' id='input-Text-slider-13-test' aria-label='acc name' tabindex='0' />
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;spinbutton&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
         <input type='text' role='spinbutton' class='role-test spinbutton-test input-Text-test' id='input-Text-spinbutton-14-test' aria-label='acc name' tabindex='0' />
@@ -282,10 +293,9 @@
         <section class="clearFix">
       <h3>Composite roles</h3>
       <section class="widgetDemo">
-        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;combobox&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
         <input type='text' role='combobox' class='role-test combobox-test input-Text-test' id='input-Text-combobox-0-test' aria-label='acc name' tabindex='0' />

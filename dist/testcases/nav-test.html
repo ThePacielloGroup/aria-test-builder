@@ -86,12 +86,25 @@
   
     <header>
     <h1>ARIA in HTML - test cases for &lt;nav&gt;</h1>
-    <p>Last updated: 06 March 2021 23:14:14</p>
-         <p>
-      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
-    </p>
-  
+    <p>Last updated: 09 March 2021 14:05:55</p>
      
+    <p>
+      <a href="https://w3c.github.io/html-aria/#nav">Allowed Roles</a>:</p>
+    <ul class="roleSummaryList">
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-menu">menu</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-menubar">menubar</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-tablist">tablist</a>
+        
+      </li>
+    </ul>
+ 
     </header>
     <main>
     <h2>Tests</h2>
@@ -309,19 +322,17 @@
         <nav role='listbox' class='role-test listbox-test nav-test' id='nav-listbox-2-test' aria-label='acc name' tabindex='0' ></nav>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;menu&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
         <nav role='menu' class='role-test menu-test nav-test' id='nav-menu-3-test' aria-label='acc name' tabindex='0' ></nav>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;menubar&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
         <nav role='menubar' class='role-test menubar-test nav-test' id='nav-menubar-4-test' aria-label='acc name' tabindex='0' ></nav>
@@ -336,10 +347,9 @@
         <nav role='radiogroup' class='role-test radiogroup-test nav-test' id='nav-radiogroup-5-test' aria-label='acc name' tabindex='0' ></nav>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;tablist&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
         <nav role='tablist' class='role-test tablist-test nav-test' id='nav-tablist-6-test' aria-label='acc name' tabindex='0' ></nav>

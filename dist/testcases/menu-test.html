@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>ARIA in HTML - test cases for &lt;menuitem type&#x3D;&#x27;radio&#x27;&gt;</title>
+  <title>ARIA in HTML - test cases for &lt;menu&gt;</title>
   <style>
   body {
     background: #f7f7f5;
@@ -85,13 +85,58 @@
 <body>
   
     <header>
-    <h1>ARIA in HTML - test cases for &lt;menuitem type&#x3D;&#x27;radio&#x27;&gt;</h1>
-    <p>Last updated: 06 March 2021 23:14:13</p>
-         <p>
-      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
-    </p>
-  
+    <h1>ARIA in HTML - test cases for &lt;menu&gt;</h1>
+    <p>Last updated: 09 March 2021 14:05:53</p>
      
+    <p>
+      <a href="https://w3c.github.io/html-aria/#menu">Allowed Roles</a>:</p>
+    <ul class="roleSummaryList">
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-directory">directory</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-group">group</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-listbox">listbox</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-menu">menu</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-menubar">menubar</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-none">none</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-presentation">presentation</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-radiogroup">radiogroup</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-tablist">tablist</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-toolbar">toolbar</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-tree">tree</a>
+        
+      </li>
+    </ul>
+ 
     </header>
     <main>
     <h2>Tests</h2>
@@ -104,7 +149,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='button' class='role-test button-test menuitem-radio-test' id='menuitem-radio-button-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='button' class='role-test button-test menu-test' id='menu-button-0-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
@@ -113,7 +158,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='checkbox' class='role-test checkbox-test menuitem-radio-test' id='menuitem-radio-checkbox-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='checkbox' class='role-test checkbox-test menu-test' id='menu-checkbox-1-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
@@ -122,7 +167,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='gridcell' class='role-test gridcell-test menuitem-radio-test' id='menuitem-radio-gridcell-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='gridcell' class='role-test gridcell-test menu-test' id='menu-gridcell-2-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;link&quot; (          <span class="notAllowed">
@@ -131,7 +176,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='link' class='role-test link-test menuitem-radio-test' id='menuitem-radio-link-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='link' class='role-test link-test menu-test' id='menu-link-3-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
@@ -140,7 +185,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='menuitem' class='role-test menuitem-test menuitem-radio-test' id='menuitem-radio-menuitem-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='menuitem' class='role-test menuitem-test menu-test' id='menu-menuitem-4-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
@@ -149,7 +194,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='menuitemcheckbox' class='role-test menuitemcheckbox-test menuitem-radio-test' id='menuitem-radio-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='menuitemcheckbox' class='role-test menuitemcheckbox-test menu-test' id='menu-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
@@ -158,7 +203,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='menuitemradio' class='role-test menuitemradio-test menuitem-radio-test' id='menuitem-radio-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='menuitemradio' class='role-test menuitemradio-test menu-test' id='menu-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;option&quot; (          <span class="notAllowed">
@@ -167,7 +212,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='option' class='role-test option-test menuitem-radio-test' id='menuitem-radio-option-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='option' class='role-test option-test menu-test' id='menu-option-7-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
@@ -176,7 +221,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='progressbar' class='role-test progressbar-test menuitem-radio-test' id='menuitem-radio-progressbar-8-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='progressbar' class='role-test progressbar-test menu-test' id='menu-progressbar-8-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;radio&quot; (          <span class="notAllowed">
@@ -185,7 +230,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='radio' class='role-test radio-test menuitem-radio-test' id='menuitem-radio-radio-9-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='radio' class='role-test radio-test menu-test' id='menu-radio-9-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
@@ -194,7 +239,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='scrollbar' class='role-test scrollbar-test menuitem-radio-test' id='menuitem-radio-scrollbar-10-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='scrollbar' class='role-test scrollbar-test menu-test' id='menu-scrollbar-10-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
@@ -203,7 +248,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='searchbox' class='role-test searchbox-test menuitem-radio-test' id='menuitem-radio-searchbox-11-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='searchbox' class='role-test searchbox-test menu-test' id='menu-searchbox-11-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;separator&quot; (          <span class="notAllowed">
@@ -212,7 +257,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='separator' class='role-test separator-test menuitem-radio-test' id='menuitem-radio-separator-12-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='separator' class='role-test separator-test menu-test' id='menu-separator-12-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;slider&quot; (          <span class="notAllowed">
@@ -221,7 +266,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='slider' class='role-test slider-test menuitem-radio-test' id='menuitem-radio-slider-13-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='slider' class='role-test slider-test menu-test' id='menu-slider-13-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
@@ -230,7 +275,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='spinbutton' class='role-test spinbutton-test menuitem-radio-test' id='menuitem-radio-spinbutton-14-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='spinbutton' class='role-test spinbutton-test menu-test' id='menu-spinbutton-14-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;switch&quot; (          <span class="notAllowed">
@@ -239,7 +284,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='switch' class='role-test switch-test menuitem-radio-test' id='menuitem-radio-switch-15-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='switch' class='role-test switch-test menu-test' id='menu-switch-15-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;tab&quot; (          <span class="notAllowed">
@@ -248,7 +293,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='tab' class='role-test tab-test menuitem-radio-test' id='menuitem-radio-tab-16-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='tab' class='role-test tab-test menu-test' id='menu-tab-16-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
@@ -257,7 +302,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='tabpanel' class='role-test tabpanel-test menuitem-radio-test' id='menuitem-radio-tabpanel-17-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='tabpanel' class='role-test tabpanel-test menu-test' id='menu-tabpanel-17-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
@@ -266,7 +311,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='textbox' class='role-test textbox-test menuitem-radio-test' id='menuitem-radio-textbox-18-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='textbox' class='role-test textbox-test menu-test' id='menu-textbox-18-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
@@ -275,7 +320,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='treeitem' class='role-test treeitem-test menuitem-radio-test' id='menuitem-radio-treeitem-19-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='treeitem' class='role-test treeitem-test menu-test' id='menu-treeitem-19-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
     </section>
     
@@ -288,7 +333,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='combobox' class='role-test combobox-test menuitem-radio-test' id='menuitem-radio-combobox-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='combobox' class='role-test combobox-test menu-test' id='menu-combobox-0-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;grid&quot; (          <span class="notAllowed">
@@ -297,61 +342,55 @@
           )
           
         </h4>
-        <menuitem type='radio' role='grid' class='role-test grid-test menuitem-radio-test' id='menuitem-radio-grid-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='grid' class='role-test grid-test menu-test' id='menu-grid-1-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;listbox&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='listbox' class='role-test listbox-test menuitem-radio-test' id='menuitem-radio-listbox-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='listbox' class='role-test listbox-test menu-test' id='menu-listbox-2-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;menu&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='menu' class='role-test menu-test menuitem-radio-test' id='menuitem-radio-menu-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='menu' class='role-test menu-test menu-test' id='menu-menu-3-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;menubar&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='menubar' class='role-test menubar-test menuitem-radio-test' id='menuitem-radio-menubar-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='menubar' class='role-test menubar-test menu-test' id='menu-menubar-4-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;radiogroup&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='radiogroup' class='role-test radiogroup-test menuitem-radio-test' id='menuitem-radio-radiogroup-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='radiogroup' class='role-test radiogroup-test menu-test' id='menu-radiogroup-5-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;tablist&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='tablist' class='role-test tablist-test menuitem-radio-test' id='menuitem-radio-tablist-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='tablist' class='role-test tablist-test menu-test' id='menu-tablist-6-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;tree&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='tree' class='role-test tree-test menuitem-radio-test' id='menuitem-radio-tree-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='tree' class='role-test tree-test menu-test' id='menu-tree-7-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
@@ -360,7 +399,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='treegrid' class='role-test treegrid-test menuitem-radio-test' id='menuitem-radio-treegrid-8-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='treegrid' class='role-test treegrid-test menu-test' id='menu-treegrid-8-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
     </section>
     
@@ -373,7 +412,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='application' class='role-test application-test menuitem-radio-test' id='menuitem-radio-application-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='application' class='role-test application-test menu-test' id='menu-application-0-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;article&quot; (          <span class="notAllowed">
@@ -382,7 +421,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='article' class='role-test article-test menuitem-radio-test' id='menuitem-radio-article-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='article' class='role-test article-test menu-test' id='menu-article-1-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;cell&quot; (          <span class="notAllowed">
@@ -391,7 +430,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='cell' class='role-test cell-test menuitem-radio-test' id='menuitem-radio-cell-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='cell' class='role-test cell-test menu-test' id='menu-cell-2-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
@@ -400,7 +439,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='columnheader' class='role-test columnheader-test menuitem-radio-test' id='menuitem-radio-columnheader-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='columnheader' class='role-test columnheader-test menu-test' id='menu-columnheader-3-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;definition&quot; (          <span class="notAllowed">
@@ -409,16 +448,15 @@
           )
           
         </h4>
-        <menuitem type='radio' role='definition' class='role-test definition-test menuitem-radio-test' id='menuitem-radio-definition-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='definition' class='role-test definition-test menu-test' id='menu-definition-4-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;directory&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='directory' class='role-test directory-test menuitem-radio-test' id='menuitem-radio-directory-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='directory' class='role-test directory-test menu-test' id='menu-directory-5-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;document&quot; (          <span class="notAllowed">
@@ -427,7 +465,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='document' class='role-test document-test menuitem-radio-test' id='menuitem-radio-document-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='document' class='role-test document-test menu-test' id='menu-document-6-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;feed&quot; (          <span class="notAllowed">
@@ -436,7 +474,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='feed' class='role-test feed-test menuitem-radio-test' id='menuitem-radio-feed-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='feed' class='role-test feed-test menu-test' id='menu-feed-7-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;figure&quot; (          <span class="notAllowed">
@@ -445,16 +483,15 @@
           )
           
         </h4>
-        <menuitem type='radio' role='figure' class='role-test figure-test menuitem-radio-test' id='menuitem-radio-figure-8-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='figure' class='role-test figure-test menu-test' id='menu-figure-8-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;group&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;group&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='group' class='role-test group-test menuitem-radio-test' id='menuitem-radio-group-9-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='group' class='role-test group-test menu-test' id='menu-group-9-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;heading&quot; (          <span class="notAllowed">
@@ -463,7 +500,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='heading' class='role-test heading-test menuitem-radio-test' id='menuitem-radio-heading-10-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='heading' class='role-test heading-test menu-test' id='menu-heading-10-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;img&quot; (          <span class="notAllowed">
@@ -472,7 +509,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='img' class='role-test img-test menuitem-radio-test' id='menuitem-radio-img-11-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='img' class='role-test img-test menu-test' id='menu-img-11-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;list&quot; (          <span class="notAllowed">
@@ -481,7 +518,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='list' class='role-test list-test menuitem-radio-test' id='menuitem-radio-list-12-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='list' class='role-test list-test menu-test' id='menu-list-12-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
@@ -490,7 +527,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='listitem' class='role-test listitem-test menuitem-radio-test' id='menuitem-radio-listitem-13-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='listitem' class='role-test listitem-test menu-test' id='menu-listitem-13-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;math&quot; (          <span class="notAllowed">
@@ -499,16 +536,15 @@
           )
           
         </h4>
-        <menuitem type='radio' role='math' class='role-test math-test menuitem-radio-test' id='menuitem-radio-math-14-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='math' class='role-test math-test menu-test' id='menu-math-14-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;none&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;none&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='none' class='role-test none-test menuitem-radio-test' id='menuitem-radio-none-15-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='none' class='role-test none-test menu-test' id='menu-none-15-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;note&quot; (          <span class="notAllowed">
@@ -517,16 +553,15 @@
           )
           
         </h4>
-        <menuitem type='radio' role='note' class='role-test note-test menuitem-radio-test' id='menuitem-radio-note-16-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='note' class='role-test note-test menu-test' id='menu-note-16-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;presentation&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='presentation' class='role-test presentation-test menuitem-radio-test' id='menuitem-radio-presentation-17-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='presentation' class='role-test presentation-test menu-test' id='menu-presentation-17-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;row&quot; (          <span class="notAllowed">
@@ -535,7 +570,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='row' class='role-test row-test menuitem-radio-test' id='menuitem-radio-row-18-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='row' class='role-test row-test menu-test' id='menu-row-18-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
@@ -544,7 +579,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='rowgroup' class='role-test rowgroup-test menuitem-radio-test' id='menuitem-radio-rowgroup-19-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='rowgroup' class='role-test rowgroup-test menu-test' id='menu-rowgroup-19-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
@@ -553,7 +588,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='rowheader' class='role-test rowheader-test menuitem-radio-test' id='menuitem-radio-rowheader-20-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='rowheader' class='role-test rowheader-test menu-test' id='menu-rowheader-20-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;separator&quot; (          <span class="notAllowed">
@@ -562,7 +597,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='separator' class='role-test separator-test menuitem-radio-test' id='menuitem-radio-separator-21-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='separator' class='role-test separator-test menu-test' id='menu-separator-21-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;table&quot; (          <span class="notAllowed">
@@ -571,7 +606,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='table' class='role-test table-test menuitem-radio-test' id='menuitem-radio-table-22-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='table' class='role-test table-test menu-test' id='menu-table-22-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;term&quot; (          <span class="notAllowed">
@@ -580,16 +615,15 @@
           )
           
         </h4>
-        <menuitem type='radio' role='term' class='role-test term-test menuitem-radio-test' id='menuitem-radio-term-23-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='term' class='role-test term-test menu-test' id='menu-term-23-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
-        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
-            <strong>Not</strong> Allowed
-          </span>
-          )
+        <h4>role=&quot;toolbar&quot; (
+          <span class="allowed">Allowed</span>
+)
           
         </h4>
-        <menuitem type='radio' role='toolbar' class='role-test toolbar-test menuitem-radio-test' id='menuitem-radio-toolbar-24-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='toolbar' class='role-test toolbar-test menu-test' id='menu-toolbar-24-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
@@ -598,7 +632,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='tooltip' class='role-test tooltip-test menuitem-radio-test' id='menuitem-radio-tooltip-25-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='tooltip' class='role-test tooltip-test menu-test' id='menu-tooltip-25-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
     </section>
     
@@ -611,7 +645,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='banner' class='role-test banner-test menuitem-radio-test' id='menuitem-radio-banner-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='banner' class='role-test banner-test menu-test' id='menu-banner-0-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
@@ -620,7 +654,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='complementary' class='role-test complementary-test menuitem-radio-test' id='menuitem-radio-complementary-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='complementary' class='role-test complementary-test menu-test' id='menu-complementary-1-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
@@ -629,7 +663,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='contentinfo' class='role-test contentinfo-test menuitem-radio-test' id='menuitem-radio-contentinfo-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='contentinfo' class='role-test contentinfo-test menu-test' id='menu-contentinfo-2-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;form&quot; (          <span class="notAllowed">
@@ -638,7 +672,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='form' class='role-test form-test menuitem-radio-test' id='menuitem-radio-form-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='form' class='role-test form-test menu-test' id='menu-form-3-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;main&quot; (          <span class="notAllowed">
@@ -647,7 +681,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='main' class='role-test main-test menuitem-radio-test' id='menuitem-radio-main-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='main' class='role-test main-test menu-test' id='menu-main-4-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
@@ -656,7 +690,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='navigation' class='role-test navigation-test menuitem-radio-test' id='menuitem-radio-navigation-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='navigation' class='role-test navigation-test menu-test' id='menu-navigation-5-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;region&quot; (          <span class="notAllowed">
@@ -665,7 +699,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='region' class='role-test region-test menuitem-radio-test' id='menuitem-radio-region-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='region' class='role-test region-test menu-test' id='menu-region-6-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;search&quot; (          <span class="notAllowed">
@@ -674,7 +708,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='search' class='role-test search-test menuitem-radio-test' id='menuitem-radio-search-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='search' class='role-test search-test menu-test' id='menu-search-7-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
     </section>
     
@@ -687,7 +721,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='alert' class='role-test alert-test menuitem-radio-test' id='menuitem-radio-alert-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='alert' class='role-test alert-test menu-test' id='menu-alert-0-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;log&quot; (          <span class="notAllowed">
@@ -696,7 +730,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='log' class='role-test log-test menuitem-radio-test' id='menuitem-radio-log-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='log' class='role-test log-test menu-test' id='menu-log-1-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
@@ -705,7 +739,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='marquee' class='role-test marquee-test menuitem-radio-test' id='menuitem-radio-marquee-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='marquee' class='role-test marquee-test menu-test' id='menu-marquee-2-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;status&quot; (          <span class="notAllowed">
@@ -714,7 +748,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='status' class='role-test status-test menuitem-radio-test' id='menuitem-radio-status-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='status' class='role-test status-test menu-test' id='menu-status-3-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;timer&quot; (          <span class="notAllowed">
@@ -723,7 +757,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='timer' class='role-test timer-test menuitem-radio-test' id='menuitem-radio-timer-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='timer' class='role-test timer-test menu-test' id='menu-timer-4-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
     </section>
     
@@ -736,7 +770,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='alertdialog' class='role-test alertdialog-test menuitem-radio-test' id='menuitem-radio-alertdialog-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='alertdialog' class='role-test alertdialog-test menu-test' id='menu-alertdialog-0-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
@@ -745,7 +779,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='dialog' class='role-test dialog-test menuitem-radio-test' id='menuitem-radio-dialog-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='dialog' class='role-test dialog-test menu-test' id='menu-dialog-1-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
     </section>
     
@@ -758,7 +792,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-abstract' class='role-test doc-abstract-test menuitem-radio-test' id='menuitem-radio-doc-abstract-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-abstract' class='role-test doc-abstract-test menu-test' id='menu-doc-abstract-0-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-acknowledgments&quot; (          <span class="notAllowed">
@@ -767,7 +801,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-acknowledgments' class='role-test doc-acknowledgments-test menuitem-radio-test' id='menuitem-radio-doc-acknowledgments-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-acknowledgments' class='role-test doc-acknowledgments-test menu-test' id='menu-doc-acknowledgments-1-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-afterword&quot; (          <span class="notAllowed">
@@ -776,7 +810,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-afterword' class='role-test doc-afterword-test menuitem-radio-test' id='menuitem-radio-doc-afterword-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-afterword' class='role-test doc-afterword-test menu-test' id='menu-doc-afterword-2-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-appendix&quot; (          <span class="notAllowed">
@@ -785,7 +819,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-appendix' class='role-test doc-appendix-test menuitem-radio-test' id='menuitem-radio-doc-appendix-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-appendix' class='role-test doc-appendix-test menu-test' id='menu-doc-appendix-3-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-backlink&quot; (          <span class="notAllowed">
@@ -794,7 +828,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-backlink' class='role-test doc-backlink-test menuitem-radio-test' id='menuitem-radio-doc-backlink-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-backlink' class='role-test doc-backlink-test menu-test' id='menu-doc-backlink-4-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-biblioref&quot; (          <span class="notAllowed">
@@ -803,7 +837,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-biblioref' class='role-test doc-biblioref-test menuitem-radio-test' id='menuitem-radio-doc-biblioref-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-biblioref' class='role-test doc-biblioref-test menu-test' id='menu-doc-biblioref-5-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-bibliography&quot; (          <span class="notAllowed">
@@ -812,7 +846,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-bibliography' class='role-test doc-bibliography-test menuitem-radio-test' id='menuitem-radio-doc-bibliography-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-bibliography' class='role-test doc-bibliography-test menu-test' id='menu-doc-bibliography-6-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-chapter&quot; (          <span class="notAllowed">
@@ -821,7 +855,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-chapter' class='role-test doc-chapter-test menuitem-radio-test' id='menuitem-radio-doc-chapter-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-chapter' class='role-test doc-chapter-test menu-test' id='menu-doc-chapter-7-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-colophon&quot; (          <span class="notAllowed">
@@ -830,7 +864,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-colophon' class='role-test doc-colophon-test menuitem-radio-test' id='menuitem-radio-doc-colophon-8-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-colophon' class='role-test doc-colophon-test menu-test' id='menu-doc-colophon-8-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-conclusion&quot; (          <span class="notAllowed">
@@ -839,7 +873,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-conclusion' class='role-test doc-conclusion-test menuitem-radio-test' id='menuitem-radio-doc-conclusion-9-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-conclusion' class='role-test doc-conclusion-test menu-test' id='menu-doc-conclusion-9-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-credit&quot; (          <span class="notAllowed">
@@ -848,7 +882,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-credit' class='role-test doc-credit-test menuitem-radio-test' id='menuitem-radio-doc-credit-10-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-credit' class='role-test doc-credit-test menu-test' id='menu-doc-credit-10-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-credits&quot; (          <span class="notAllowed">
@@ -857,7 +891,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-credits' class='role-test doc-credits-test menuitem-radio-test' id='menuitem-radio-doc-credits-11-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-credits' class='role-test doc-credits-test menu-test' id='menu-doc-credits-11-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-dedication&quot; (          <span class="notAllowed">
@@ -866,7 +900,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-dedication' class='role-test doc-dedication-test menuitem-radio-test' id='menuitem-radio-doc-dedication-12-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-dedication' class='role-test doc-dedication-test menu-test' id='menu-doc-dedication-12-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-endnotes&quot; (          <span class="notAllowed">
@@ -875,7 +909,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-endnotes' class='role-test doc-endnotes-test menuitem-radio-test' id='menuitem-radio-doc-endnotes-13-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-endnotes' class='role-test doc-endnotes-test menu-test' id='menu-doc-endnotes-13-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-epigraph&quot; (          <span class="notAllowed">
@@ -884,7 +918,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-epigraph' class='role-test doc-epigraph-test menuitem-radio-test' id='menuitem-radio-doc-epigraph-14-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-epigraph' class='role-test doc-epigraph-test menu-test' id='menu-doc-epigraph-14-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-epilogue&quot; (          <span class="notAllowed">
@@ -893,7 +927,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-epilogue' class='role-test doc-epilogue-test menuitem-radio-test' id='menuitem-radio-doc-epilogue-15-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-epilogue' class='role-test doc-epilogue-test menu-test' id='menu-doc-epilogue-15-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-errata&quot; (          <span class="notAllowed">
@@ -902,7 +936,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-errata' class='role-test doc-errata-test menuitem-radio-test' id='menuitem-radio-doc-errata-16-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-errata' class='role-test doc-errata-test menu-test' id='menu-doc-errata-16-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-example&quot; (          <span class="notAllowed">
@@ -911,7 +945,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-example' class='role-test doc-example-test menuitem-radio-test' id='menuitem-radio-doc-example-17-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-example' class='role-test doc-example-test menu-test' id='menu-doc-example-17-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-footnote&quot; (          <span class="notAllowed">
@@ -920,7 +954,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-footnote' class='role-test doc-footnote-test menuitem-radio-test' id='menuitem-radio-doc-footnote-18-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-footnote' class='role-test doc-footnote-test menu-test' id='menu-doc-footnote-18-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-foreword&quot; (          <span class="notAllowed">
@@ -929,7 +963,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-foreword' class='role-test doc-foreword-test menuitem-radio-test' id='menuitem-radio-doc-foreword-19-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-foreword' class='role-test doc-foreword-test menu-test' id='menu-doc-foreword-19-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-glossref&quot; (          <span class="notAllowed">
@@ -938,7 +972,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-glossref' class='role-test doc-glossref-test menuitem-radio-test' id='menuitem-radio-doc-glossref-20-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-glossref' class='role-test doc-glossref-test menu-test' id='menu-doc-glossref-20-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-glossary&quot; (          <span class="notAllowed">
@@ -947,7 +981,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-glossary' class='role-test doc-glossary-test menuitem-radio-test' id='menuitem-radio-doc-glossary-21-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-glossary' class='role-test doc-glossary-test menu-test' id='menu-doc-glossary-21-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-index&quot; (          <span class="notAllowed">
@@ -956,7 +990,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-index' class='role-test doc-index-test menuitem-radio-test' id='menuitem-radio-doc-index-22-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-index' class='role-test doc-index-test menu-test' id='menu-doc-index-22-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-introduction&quot; (          <span class="notAllowed">
@@ -965,7 +999,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-introduction' class='role-test doc-introduction-test menuitem-radio-test' id='menuitem-radio-doc-introduction-23-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-introduction' class='role-test doc-introduction-test menu-test' id='menu-doc-introduction-23-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-noteref&quot; (          <span class="notAllowed">
@@ -974,7 +1008,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-noteref' class='role-test doc-noteref-test menuitem-radio-test' id='menuitem-radio-doc-noteref-24-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-noteref' class='role-test doc-noteref-test menu-test' id='menu-doc-noteref-24-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-notice&quot; (          <span class="notAllowed">
@@ -983,7 +1017,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-notice' class='role-test doc-notice-test menuitem-radio-test' id='menuitem-radio-doc-notice-25-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-notice' class='role-test doc-notice-test menu-test' id='menu-doc-notice-25-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-pagelist&quot; (          <span class="notAllowed">
@@ -992,7 +1026,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-pagelist' class='role-test doc-pagelist-test menuitem-radio-test' id='menuitem-radio-doc-pagelist-26-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-pagelist' class='role-test doc-pagelist-test menu-test' id='menu-doc-pagelist-26-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-part&quot; (          <span class="notAllowed">
@@ -1001,7 +1035,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-part' class='role-test doc-part-test menuitem-radio-test' id='menuitem-radio-doc-part-27-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-part' class='role-test doc-part-test menu-test' id='menu-doc-part-27-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-preface&quot; (          <span class="notAllowed">
@@ -1010,7 +1044,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-preface' class='role-test doc-preface-test menuitem-radio-test' id='menuitem-radio-doc-preface-28-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-preface' class='role-test doc-preface-test menu-test' id='menu-doc-preface-28-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-prologue&quot; (          <span class="notAllowed">
@@ -1019,7 +1053,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-prologue' class='role-test doc-prologue-test menuitem-radio-test' id='menuitem-radio-doc-prologue-29-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-prologue' class='role-test doc-prologue-test menu-test' id='menu-doc-prologue-29-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-pullquote&quot; (          <span class="notAllowed">
@@ -1028,7 +1062,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-pullquote' class='role-test doc-pullquote-test menuitem-radio-test' id='menuitem-radio-doc-pullquote-30-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-pullquote' class='role-test doc-pullquote-test menu-test' id='menu-doc-pullquote-30-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-qna&quot; (          <span class="notAllowed">
@@ -1037,7 +1071,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-qna' class='role-test doc-qna-test menuitem-radio-test' id='menuitem-radio-doc-qna-31-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-qna' class='role-test doc-qna-test menu-test' id='menu-doc-qna-31-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-subtitle&quot; (          <span class="notAllowed">
@@ -1046,7 +1080,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-subtitle' class='role-test doc-subtitle-test menuitem-radio-test' id='menuitem-radio-doc-subtitle-32-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-subtitle' class='role-test doc-subtitle-test menu-test' id='menu-doc-subtitle-32-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-toc&quot; (          <span class="notAllowed">
@@ -1055,7 +1089,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-toc' class='role-test doc-toc-test menuitem-radio-test' id='menuitem-radio-doc-toc-33-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-toc' class='role-test doc-toc-test menu-test' id='menu-doc-toc-33-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;doc-tip&quot; (          <span class="notAllowed">
@@ -1064,7 +1098,7 @@
           )
           
         </h4>
-        <menuitem type='radio' role='doc-tip' class='role-test doc-tip-test menuitem-radio-test' id='menuitem-radio-doc-tip-34-test' aria-label='acc name' tabindex='0' ></menuitem>
+        <menu role='doc-tip' class='role-test doc-tip-test menu-test' id='menu-doc-tip-34-test' aria-label='acc name' tabindex='0' ></menu>
       </section>
     </section>
     
