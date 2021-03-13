@@ -984,21 +984,13 @@
     "allowedRoles": "all"
   },
 
-  "summaryOpen":
+  "summary":
   {
     "nodeName": "summary",
-    "name": "<summary> with open parent",
-    "markup": "<details open><summary aria-expanded='true' {attributeString}></summary></details>",
+    "name": "<summary>",
+    "markup": "<details open><summary {attributeString}></summary></details>",
     "nativeRole": "button",
-    "allowedRoles": ["button"]
-  },
-  "summaryClosed":
-  {
-    "nodeName": "summary",
-    "name": "<summary> with closed parent",
-    "markup": "<details><summary aria-expanded='false' {attributeString}></summary></details>",
-    "nativeRole": "button",
-    "allowedRoles": ["button"]
+    "allowedRoles": []
   },
   "table":
   {
