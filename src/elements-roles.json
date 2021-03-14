@@ -1019,8 +1019,8 @@
   "tbody":
   {
     "nodeName": "tbody",
-    "name": "<table><tbody {attributeString}></tbody></table>",
-    "markup": "<tbody></tbody>",
+    "name": "<tbody>",
+    "markup": "<table><tbody {attributeString}></tbody></table>",
     "nativeRole": "rowgroup",
     "allowedRoles": "all"
   },
@@ -1052,8 +1052,16 @@
   {
     "nodeName": "td",
     "name": "<td>",
-    "markup": "<td></td>",
+    "markup": "<table><caption>no role</caption><tr><td {attributeString}></td></tr></table>",
     "nativeRole": "cell",
+    "allowedRoles": []
+  },
+  "td-any":
+  {
+    "nodeName": "td",
+    "name": "<td>",
+    "markup": "<table role='presentation'><tr><td {attributeString}></td></tr></table>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -1061,8 +1069,16 @@
   {
     "nodeName": "th",
     "name": "<th>",
-    "markup": "<th></th>",
+    "markup": "<table><caption>no role</caption><tr><th></th></tr></table>",
     "nativeRole": "columnheader",
+    "allowedRoles": []
+  },
+  "th-any":
+  {
+    "nodeName": "th",
+    "name": "<th>",
+    "markup": "<table role='presentation'><tr><th></th></tr></table>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "time":
@@ -1080,6 +1096,14 @@
     "name": "<tr>",
     "markup": "<tr></tr>",
     "nativeRole": "row",
+    "allowedRoles": "all"
+  },
+  "tr-any":
+  {
+    "nodeName": "tr",
+    "name": "<tr>",
+    "markup": "<table role='presentation'><tr><td></td></tr></table>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "track":
