@@ -286,11 +286,10 @@
       <h3>Composite roles</h3>
       <section class="widgetDemo">
         <h4>role=&quot;combobox&quot; (
-          <span class="allowed">Allowed</span>
-)
-          
-        </h4>
-        <input type='search' role='combobox' class='role-test combobox-test input-Text-test' id='input-Text-combobox-0-test' aria-label='acc name' list="datalist1">
+          <span class="allowed">Allowed (should not)</span>
+)  </h4>
+<p><strong>aria-haspopup (should not)</strong></p>  
+        <input type='search' role='combobox' aria-haspopup="true" class='role-test combobox-test input-Text-test' id='input-Text-combobox-0-test' aria-label='acc name' list="datalist1">
       </section>
       <section class="widgetDemo">
         <h4>role=&quot;grid&quot; (          <span class="notAllowed">
